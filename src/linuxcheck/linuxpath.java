@@ -11,10 +11,13 @@ public class linuxpath {
 	public static void main(String[] args) throws IOException {
 		
 	
-		        String directoryPath = "folder";
+		        String directoryPath = System.getProperty("user.dir")+File.separator+"folder";
+		       
 
 		        // Print debug information
 		        System.out.println("Directory path: " + directoryPath);
+		       // System.out.println();
+
 
 		        // Create the directory if it doesn't exist
 		        File directory = new File(directoryPath);
